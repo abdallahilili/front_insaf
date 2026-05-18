@@ -148,3 +148,14 @@ input[type="number"]::-webkit-outer-spin-button {
   outline: none;
   box-shadow: 0 0 0 3px rgba(34, 77, 146, 0.2);
 }
+
+/* OCR Scanner Laser Animation */
+@keyframes scan {
+  0% { transform: translateY(0); opacity: 0.2; }
+  50% { transform: translateY(3.5rem); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.2; }
+}
+
+.scanner-laser {
+  animation: scan 2s ease-in-out infinite;
+}
